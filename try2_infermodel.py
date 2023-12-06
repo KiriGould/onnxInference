@@ -3,7 +3,7 @@ from transformers import BartTokenizer
 import numpy as np
 
 # Load the ONNX model
-model_path = 'bart-large-cnn.onnx'
+model_path = 'bart-large-cnn.onnx' #download bart-large-cnn.onnx from HuggingFace
 try:
     session = ort.InferenceSession(model_path)
     print("Model loaded successfully.")
